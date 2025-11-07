@@ -19,6 +19,8 @@
       rofi
       alacritty
       sxhkd
+      neovim
+      telegram-desktop
     ];
   };
 
