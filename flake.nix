@@ -10,12 +10,24 @@
     };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ... }: {
-    nixosConfigurations.sitranto-machine = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs };
-      modules = [
-        ./configuration.nix
-      ];
+  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
+    nixosConfigurations = {
+      sitranto-machine = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+
+	modules = [
+          ./hosts/sitranto-machine
+
+	  home-manager.nixosModules.home-manager 
+	  {
+	    home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+
+            home-manager.extraSpecialArgs = inputs;
+            home-manager.users.ryan = import ./home;
+	  }
+	];
+      };
     };
   };
 }
