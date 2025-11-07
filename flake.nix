@@ -24,7 +24,7 @@
             home-manager.useUserPackages = true;
 
             home-manager.extraSpecialArgs = inputs;
-            home-manager.users.ryan = import ./home;
+            home-manager.users.sitranto = import ./home;
 	  }
 	];
       };
