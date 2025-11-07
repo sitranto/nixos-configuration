@@ -10,9 +10,12 @@
     };
 
     displayManager = {
-        defaultSession = "none+bspwm";
-        lightdm.enable = true;
-        bspwm.enable = true;
+      defaultSession = "none+bspwm";
+      lightdm.enable = true;
+    };
+
+    windowManager = {
+      bspwm.enable = true;
     };
   };
 }

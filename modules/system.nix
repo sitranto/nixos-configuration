@@ -4,8 +4,8 @@
   users.users.sitranto = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
-    home = "/home/sitranto"
-  }
+    home = "/home/sitranto";
+  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
