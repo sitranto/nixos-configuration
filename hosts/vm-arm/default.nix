@@ -6,10 +6,8 @@
       ../../modules/system.nix
       ../../modules/bspwm.nix
       ./hardware-configuration.nix
+      ./bootloader.nix
     ];
-
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "vm-arm";
   networking.networkmanager.enable = true;
