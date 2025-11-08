@@ -11,7 +11,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "sitranto-machine";
+  networking.hostName = "vm-arm";
   networking.networkmanager.enable = true;
 
   nixpkgs.config.allowUnfree = true;
