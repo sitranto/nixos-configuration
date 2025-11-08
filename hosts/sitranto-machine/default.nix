@@ -4,7 +4,7 @@
   imports =
     [
       ../../modules/system.nix
-      ../../modules/bspwm.nix
+      ../../modules/hyprland.nix
       ./hardware-configuration.nix
       ./bootloader.nix
       ./nvidia.nix
