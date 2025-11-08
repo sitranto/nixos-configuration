@@ -1,11 +1,13 @@
 { config, pkgs, ... }:
-
+let
+  username = "alice";
+in
 {
   imports = [];
 
   home = {
-    username = "sitranto";
-    homeDirectory = "/home/sitranto";
+    inherit username;
+    homeDirectory = "/home/${username}";
 
     stateVersion = "25.05";
 
