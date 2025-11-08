@@ -1,10 +1,12 @@
 { pkgs, lib, ... }:
-
+let
+  username = "alice";
+in
 {    
-  users.users.sitranto = {
+  users.users.${username} = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
-    home = "/home/sitranto";
+    home = "/home/${username}";
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
