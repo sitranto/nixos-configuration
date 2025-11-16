@@ -6,6 +6,7 @@
       ../../modules/system.nix
       ../../modules/hyprland.nix
       ../../modules/sound.nix
+      ../../modules/zapret.nix
       ./hardware-configuration.nix
       ./bootloader.nix
       ./nvidia.nix

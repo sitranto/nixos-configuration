@@ -20,9 +20,9 @@ in
       vivaldi
       rofi
       alacritty
-      sxhkd
       neovim
       telegram-desktop
+      fish
     ];
   };
 

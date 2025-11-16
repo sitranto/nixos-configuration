@@ -5,4 +5,6 @@
   };
 
   boot.kernelParams = [ "nomodeset" ];
+
+  boot.extraModulePackages = [ ];
 }
