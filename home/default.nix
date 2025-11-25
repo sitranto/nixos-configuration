@@ -3,7 +3,9 @@ let
   username = "sitranto";
 in
 {
-  imports = [];
+  imports = [
+    ./programs/neovim.nix
+  ];
 
   home = {
     inherit username;
