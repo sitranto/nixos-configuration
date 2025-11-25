@@ -23,6 +23,8 @@ in
       neovim
       telegram-desktop
       fish
+      discord
+      vesktop
     ];
   };
 
