@@ -2,11 +2,14 @@
 let
   username = "sitranto";
 in
-{    
+{
+  programs.fish.enable = true;
+
   users.users.${username} = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "input" ];
     home = "/home/${username}";
+    shell = pkgs.fish;
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

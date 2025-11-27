@@ -5,6 +5,7 @@ in
 {
   imports = [
     ./programs/neovim.nix
+    ./programs/waybar.nix
   ];
 
   home = {
@@ -16,17 +17,16 @@ in
     packages = with pkgs; [
       zip
       obsidian
-      nodejs
       nodePackages.npm
       docker-compose
       vivaldi
       rofi
       alacritty
-      neovim
       telegram-desktop
-      fish
-      discord
       vesktop
+      wl-clipboard
+      grim
+      slurp
     ];
   };
 
