@@ -6,6 +6,7 @@ in
   imports = [
     ./programs/neovim.nix
     ./programs/waybar.nix
+    ./programs/steam.nix
   ];
 
   home = {
@@ -15,6 +16,7 @@ in
     stateVersion = "25.05";
 
     packages = with pkgs; [
+      pavucontrol
       zip
       obsidian
       nodePackages.npm
