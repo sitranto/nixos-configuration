@@ -15,6 +15,8 @@
   networking.hostName = "sitranto-machine";
   networking.networkmanager.enable = true;
 
+  programs.gamemode.enable = true;
+
   nixpkgs.config.allowUnfree = true;
 
   services.xserver.xkb.layout = "us,ru";

@@ -6,7 +6,6 @@ in
   imports = [
     ./programs/neovim.nix
     ./programs/waybar.nix
-    ./programs/steam.nix
   ];
 
   home = {
@@ -29,6 +28,7 @@ in
       wl-clipboard
       grim
       slurp
+      steam
     ];
   };
 
